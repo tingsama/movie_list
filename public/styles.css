@@ -1,0 +1,8 @@
+span {
+	opacity: 0;
+}
+
+button:focus ~ span {
+	opacity: 1;
+}
+
