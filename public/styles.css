@@ -1,9 +1,28 @@
-.body {
+html {
 	background-image: linear-gradient(to bottom right, #2f6982, #ebf8e1, #f2c494);
+	min-height: 100% ;
+	min-width: 100% ;
 }
 
-.center-div {
+#center-div {
 	text-align: center;
+}
+
+#svg-container{
+	align-items: center;
+}
+
+.svg-circle{
+	stroke: #f2c494;
+	stroke-width: 2; 
+	fill: #2f6982;
+}
+
+#svg-star {
+	fill: #f2c494;
+	stroke: #2f6982;
+	stroke-width:5;
+	fill-rule:evenodd;
 }
 
 h1 {

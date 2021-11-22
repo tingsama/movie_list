@@ -3,7 +3,6 @@ d3.json("movie.json").then(function(data) {
 	data = JSON.parse(JSON.stringify(data)).data
 	console.log(data)
 
-	var titleArr = [], runtimeArr = [], budgetArr = [], directedArr = [], dateArr = []
 	data.forEach(d=>{
 		d.title = d.Title
 		d.runtime = parseInt(d.Running_time)
@@ -21,8 +20,9 @@ d3.json("movie.json").then(function(data) {
 		left: 90
 	}
 	const width = 1000 - margin.left - margin.right
-	const height = 500 - margin.top - margin.bottom;
+	const height = 600 - margin.top - margin.bottom;
 
+	// cite: https://www.d3-graph-gallery.com/graph/barplot_button_data_simple.html (scaleband and linearband)
 	// append the svg object to the body of the page
 	const svg = d3.select("#data_visualize")
 		.append("svg")
@@ -60,7 +60,7 @@ d3.json("movie.json").then(function(data) {
 		.attr("class", "my_y_axis")
 		.call(d3.axisLeft(y))
 
-	// cite: https://perials.github.io/responsive-bar-chart-with-d3/
+	// cite: https://perials.github.io/responsive-bar-chart-with-d3/ (tooltip)
 	// create a tooltip
 	var tooltip = d3.select("#data_visualize")
 		.append("div")
@@ -81,6 +81,7 @@ d3.json("movie.json").then(function(data) {
 			.transition().duration(1000)
 			.call(d3.axisLeft(y));
 
+		// cite: d3Easy.html (enter, update, exit)
 		// append the bar rectangles to the svg element
 		svg.selectAll("rect")
 			.data(data)
