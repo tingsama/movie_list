@@ -50,7 +50,7 @@ d3.json("movie.json").then(function(data) {
 			"translate(" + (width + 10) + " ," + 
 						(height + 5) + ")")
 		.style("text-anchor", "start")
-		.text("Movie Name");
+		.text("movie name");
 
 	// y axis
 	const y = d3.scaleLinear()
@@ -60,6 +60,17 @@ d3.json("movie.json").then(function(data) {
 		.attr("class", "my_y_axis")
 		.call(d3.axisLeft(y))
 
+	// cite: https://perials.github.io/responsive-bar-chart-with-d3/
+	// create a tooltip
+	var tooltip = d3.select("#data_visualize")
+		.append("div")
+		.style("position", "absolute")
+		.style("visibility", "hidden")
+		.style("padding", "5px")
+		.style("color", "#ebf8e1")
+		.style("background", "rgba(0,0,0,0.5)")
+		.style("border-radius", "5px")
+		.text("tooltip");
 
 	// create and update the plot 
 	function update(data, var_1, var_2) {
@@ -81,6 +92,21 @@ d3.json("movie.json").then(function(data) {
 					.attr("width", x.bandwidth())
 					.attr("height", (d) => height - y(d[var_2]))
 					.attr("fill", "#85a9a2")
+					.on("mouseover", function(d, i) {
+						tooltip.html(`${i[var_1]}`).style("visibility", "visible");
+						d3.select(this)
+							.attr("fill", "#334f5b");
+					})
+					.on("mousemove", function(){
+					  tooltip
+						.style("top", (event.pageY-10)+"px")
+						.style("left",(event.pageX+10)+"px");
+					})
+					.on("mouseout", function(d, i) {
+						tooltip.html(``).style("visibility", "hidden");
+						d3.select(this)
+							.attr("fill", "#85a9a2");
+					});
 				},
 				update => {
 					update.transition().duration(1000)
@@ -92,17 +118,18 @@ d3.json("movie.json").then(function(data) {
 
 					// text label for the y axis
 					svg.append("text")
-					.attr("class", "my_y_label")
-					.attr("transform",
-						"translate(" + (-30) + " ," + 
-									(-10) + ")")
-					.style("text-anchor", "start")
-					.text(var_2);
+						.attr("class", "my_y_label")
+						.attr("transform",
+							"translate(" + (-30) + " ," + 
+										(-10) + ")")
+						.style("text-anchor", "start")
+						.text(var_2);
 				},
 				exit => 
 					exit.remove(),
 					svg.selectAll("text.my_y_label").remove(),
 			)
+			
 	}
 
 	update(data, 'title', 'runtime')
