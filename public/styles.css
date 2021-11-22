@@ -1,8 +1,27 @@
-span {
-	opacity: 0;
+.body {
+	background-image: linear-gradient(to bottom right, #2f6982, #ebf8e1, #f2c494);
 }
 
-button:focus ~ span {
-	opacity: 1;
+.center-div {
+	text-align: center;
 }
 
+h1 {
+	font-style: oblique;
+	color: #334f5b; 
+}
+
+button {
+	font-style: oblique;
+	background-color: #334f5b; 
+	border: none;
+	color: #f9f1e6;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 12px;
+	margin: 20px;
+	width: 150px;
+  }

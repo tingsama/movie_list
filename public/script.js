@@ -16,12 +16,12 @@ d3.json("movie.json").then(function(data) {
 	// set the dimensions and margins of the graph
 	const margin = {
 		top: 30,
-		right: 30,
+		right: 120,
 		bottom: 120,
 		left: 90
 	}
-	const width = 800 - margin.left - margin.right
-	const height = 600 - margin.top - margin.bottom;
+	const width = 1000 - margin.left - margin.right
+	const height = 500 - margin.top - margin.bottom;
 
 	// append the svg object to the body of the page
 	const svg = d3.select("#data_visualize")
@@ -31,37 +31,42 @@ d3.json("movie.json").then(function(data) {
 		.append("g")
 			.attr("transform", `translate(${margin.left},${margin.top})`);
 
-  	// X axis
+  	// x axis
 	const x = d3.scaleBand()
   		.domain(data.map((d) => d.title))
   		.range([0, width])
 	 	.padding(0.2);
-
 	svg.append("g")
-		.attr("transform", `translate(0,${height})`)
+		.attr("transform", "translate(0," + height + ")")
 		.call(d3.axisBottom(x))
 		.selectAll("text")
-		  .attr("y", 0)
-		  .attr("x", 9)
-		  .attr("dy", ".35em")
-		  .attr("transform", "rotate(90)")
-		  .style("text-anchor", "start");
+			.attr("transform", "translate(-10,0)rotate(-45)")
+			.style("font-size", "12px")
+			.style("text-anchor", "end");
 
-	// Y axis
+	// text label for the x axis
+	svg.append("text")           
+		.attr("transform",
+			"translate(" + (width + 10) + " ," + 
+						(height + 5) + ")")
+		.style("text-anchor", "start")
+		.text("Movie Name");
+
+	// y axis
 	const y = d3.scaleLinear()
 		.domain([0, 1])
 		.range([height, 0]);
 	svg.append("g")
-		.attr("class", "myYaxis")
-		.call(d3.axisLeft(y));
+		.attr("class", "my_y_axis")
+		.call(d3.axisLeft(y))
 
 
 	// create and update the plot 
 	function update(data, var_1, var_2) {
-		// Y axis
+		// y axis
 		y_max = d3.max(Array.from(data, (d) => d[var_2]))
 		y.domain([0, y_max])
-		svg.selectAll("g.myYaxis")
+		svg.selectAll("g.my_y_axis")
 			.transition().duration(1000)
 			.call(d3.axisLeft(y));
 
@@ -75,21 +80,31 @@ d3.json("movie.json").then(function(data) {
 					.attr("y", (d) => y(d[var_2]))
 					.attr("width", x.bandwidth())
 					.attr("height", (d) => height - y(d[var_2]))
-					.attr("fill", "#69b3a2")
+					.attr("fill", "#85a9a2")
 				},
-				update => 
+				update => {
 					update.transition().duration(1000)
 					.attr("x", (d) => x(d[var_1]))
 					.attr("y", (d) => y(d[var_2]))
 					.attr("width", x.bandwidth())
 					.attr("height", (d) => height - y(d[var_2]))
-					.attr("fill", "#69b3a2")
-					.attr("width", x.bandwidth()),
-					
-				rectsToRemove => 
-					rectsToRemove.remove()
+					.attr("fill", "#85a9a2")
+
+					// text label for the y axis
+					svg.append("text")
+					.attr("class", "my_y_label")
+					.attr("transform",
+						"translate(" + (-30) + " ," + 
+									(-10) + ")")
+					.style("text-anchor", "start")
+					.text(var_2);
+				},
+				exit => 
+					exit.remove(),
+					svg.selectAll("text.my_y_label").remove(),
 			)
 	}
+
 	update(data, 'title', 'runtime')
 
 	document.querySelector("#runtime").addEventListener('click', ()=> {
