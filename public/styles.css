@@ -66,3 +66,19 @@ button:hover {
 	font-family: Arial;
 	background-color: #85a9a2;
 }
+
+img {
+	padding-left: 42px;
+}
+
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+#footer{
+    margin: auto;
+    text-align:left;
+    padding: 3px;
+}

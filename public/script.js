@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
 			d.budget = parseInt(d.Budget) 
 			d.boxoffice = parseInt(d.Box_office) 
 			d.like = d.Like 
-			// d.date = Date.parse(d.Release_date) 
 		})
 
 		// set the dimensions and margins of the graph
@@ -26,10 +25,13 @@ document.addEventListener("DOMContentLoaded", function() {
 			left: 90
 		}
 		const width = 1000 - margin.left - margin.right
-		const height = 600 - margin.top - margin.bottom;
+		const height = 400 - margin.top - margin.bottom;
 
-		// cite: https://www.d3-graph-gallery.com/graph/barplot_button_data_simple.html (scaleband and linearband)
-		// append the svg object to the body of the page
+		/* 
+		Source link: https://www.d3-graph-gallery.com/graph/barplot_button_data_simple.html 
+		Use the templete of x and y component from svg, eg: scaleBand() and linearBand()
+		Different: the size and details of the components are modified 
+		*/ 
 		const svg = d3.select("#data_visualize")
 			.append("svg")
 				.attr("width", width + margin.left + margin.right)
@@ -66,8 +68,11 @@ document.addEventListener("DOMContentLoaded", function() {
 			.attr("class", "my_y_axis")
 			.call(d3.axisLeft(y))
 
-		// cite: https://perials.github.io/responsive-bar-chart-with-d3/ (tooltip)
-		// create a tooltip for each rect with Movie Title when hover
+		/* 
+		Source link: https://perials.github.io/responsive-bar-chart-with-d3/ 
+		Use the similar tooltip component, active the tooltip when mouse hover the rect
+		Different: Tooltip style are modified, movie title will showup instead of the digital data 
+		*/
 		var tooltip = d3.select("#data_visualize")
 			.append("div")
 			.style("position", "absolute")
@@ -87,8 +92,12 @@ document.addEventListener("DOMContentLoaded", function() {
 				.transition().duration(1000)
 				.call(d3.axisLeft(y));
 
-			// cite: d3Easy.html (enter, update, exit)
-			// append the bar rectangles to the svg element
+			/* 	
+			Source link: d3Easy.html 
+			Use the templete of join, eg: the enter, update, exit structure
+			Different: the other append attributes are self defined
+			eg: x and y values, mouseover, mousemove, mouseout event, text component, and remove() function
+			*/
 			svg.selectAll("rect")
 				.data(data)
 				.join(
@@ -157,15 +166,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			document.querySelectorAll('rect')
 				.forEach(rect => rect.setAttribute('decrease', false))
 
-
-			// var rects = document.querySelectorAll("rect");
-			// for (var i = 0; i < rects.length; i++) {
-			// 	rect = document.querySelectorAll('rect')[i].addEventListener('click', ()=>{
-
 			document.querySelectorAll('rect')
 				.forEach((rect,i) => rect.addEventListener('click', ()=>{
 				
-				// i = i-1
 				let updated_like = data[i-1].Like;
 
 				if (updated_like == 5) rect.setAttribute('decrease',true);
