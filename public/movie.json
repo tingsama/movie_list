@@ -6,9 +6,7 @@
       "Budget": 85000000,
       "Box_office": 183600000,
       "Release_date": "2000-11-22",
-      "Directed_by": "Kevin Lima",
-      "Music_by": "David Newman",
-      "Distributed_by": "Buena Vista Pictures Distribution"
+      "Like": 3
     },
     {
       "Title": "A Bug's Life",
@@ -16,9 +14,7 @@
       "Budget": 120000000,
       "Box_office": 363300000,
       "Release_date": "1998-11-20",
-      "Directed_by": "John Lasseter",
-      "Music_by": "Randy Newman",
-      "Distributed_by": "Buena Vista Pictures Distribution"
+      "Like": 4
     },
     {
       "Title": "Alice in Wonderland",
@@ -26,9 +22,7 @@
       "Budget": 200000000,
       "Box_office": 1025000000,
       "Release_date": "2010-02-25",
-      "Directed_by": "Tim Burton",
-      "Music_by": "Danny Elfman",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 3
     },
     {
       "Title": "Cars",
@@ -36,9 +30,7 @@
       "Budget": 120000000,
       "Box_office": 462000000,
       "Release_date": "2006-05-26",
-      "Directed_by": "John Lasseter",
-      "Music_by": "Randy Newman",
-      "Distributed_by": "Buena Vista Pictures Distribution"
+      "Like": 4
     },
     {
       "Title": "Cars 2",
@@ -46,9 +38,7 @@
       "Budget": 200000000,
       "Box_office": 562100000,
       "Release_date": "2011-06-18",
-      "Directed_by": "John Lasseter",
-      "Music_by": "Michael Giacchino",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 5
     },
     {
       "Title": "Chicken Little",
@@ -56,9 +46,7 @@
       "Budget": 150000000,
       "Box_office": 314400000,
       "Release_date": "2005-10-30",
-      "Directed_by": "Mark Dindal",
-      "Music_by": "John Debney",
-      "Distributed_by": "Buena Vista Pictures Distribution"
+      "Like": 1
     },
     {
       "Title": "Coco",
@@ -66,9 +54,7 @@
       "Budget": 175000000,
       "Box_office": 807800000,
       "Release_date": "2017-10-20",
-      "Directed_by": "Lee Unkrich",
-      "Music_by": "Michael Giacchino",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 4
     },
     {
       "Title": "Cool Runnings",
@@ -76,9 +62,7 @@
       "Budget": 17000000,
       "Box_office": 154900000,
       "Release_date": "1993-10-01",
-      "Directed_by": "Jon Turteltaub",
-      "Music_by": "Hans Zimmer",
-      "Distributed_by": "Buena Vista Pictures"
+      "Like": 5
     },
     {
       "Title": "Dumbo",
@@ -86,9 +70,7 @@
       "Budget": 170000000,
       "Box_office": 353300000,
       "Release_date": "2019-03-11",
-      "Directed_by": "Tim Burton",
-      "Music_by": "Danny Elfman",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 4
     },
     {
       "Title": "Finding Dory",
@@ -96,9 +78,7 @@
       "Budget": 175000000,
       "Box_office": 1029000000,
       "Release_date": "2016-06-08",
-      "Directed_by": "Andrew Stanton",
-      "Music_by": "Thomas Newman",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 4
     },
     {
       "Title": "Finding Nemo",
@@ -106,9 +86,7 @@
       "Budget": 94000000,
       "Box_office": 940300000,
       "Release_date": "2003-05-30",
-      "Directed_by": "Andrew Stanton",
-      "Music_by": "Thomas Newman",
-      "Distributed_by": "Buena Vista Pictures Distribution"
+      "Like": 4
     },
     {
       "Title": "Frankenweenie",
@@ -116,9 +94,7 @@
       "Budget": 39000000,
       "Box_office": 81500000,
       "Release_date": "2012-09-20",
-      "Directed_by": "Tim Burton",
-      "Music_by": "Danny Elfman",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 3
     },
     {
       "Title": "Hocus Pocus",
@@ -126,9 +102,7 @@
       "Budget": 28000000,
       "Box_office": 44900000,
       "Release_date": "1993-07-16",
-      "Directed_by": "Kenny Ortega",
-      "Music_by": "John Debney",
-      "Distributed_by": "Buena Vista Pictures"
+      "Like": 2
     },
     {
       "Title": "Hocus Pocus",
@@ -136,9 +110,7 @@
       "Budget": 28000000,
       "Box_office": 44900000,
       "Release_date": "1993-07-16",
-      "Directed_by": "Kenny Ortega",
-      "Music_by": "John Debney",
-      "Distributed_by": "Buena Vista Pictures"
+      "Like": 5
     },
     {
       "Title": "Incredibles 2",
@@ -146,9 +118,7 @@
       "Budget": 200000000,
       "Box_office": 1245000000,
       "Release_date": "2018-06-05",
-      "Directed_by": "Brad Bird",
-      "Music_by": "Michael Giacchino",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 3
     },
     {
       "Title": "Inside Out",
@@ -156,9 +126,7 @@
       "Budget": 175000000,
       "Box_office": 858800000,
       "Release_date": "2015-05-18",
-      "Directed_by": "Pete Docter",
-      "Music_by": "Michael Giacchino",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 2
     },
     {
       "Title": "John Carter",
@@ -166,9 +134,7 @@
       "Budget": 306600000,
       "Box_office": 284100000,
       "Release_date": "2012-02-22",
-      "Directed_by": "Andrew Stanton",
-      "Music_by": "Michael Giacchino",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 5
     },
     {
       "Title": "Mary Poppins",
@@ -176,9 +142,7 @@
       "Budget": 4400000,
       "Box_office": 103100000,
       "Release_date": "1964-08-27",
-      "Directed_by": "Robert Stevenson",
-      "Music_by": "Irwin Kostal",
-      "Distributed_by": "Buena Vista Distribution"
+      "Like": 2
     },
     {
       "Title": "Monsters, Inc.",
@@ -186,9 +150,7 @@
       "Budget": 115000000,
       "Box_office": 577400000,
       "Release_date": "2001-10-28",
-      "Directed_by": "Pete Docter",
-      "Music_by": "Randy Newman",
-      "Distributed_by": "Buena Vista Pictures Distribution"
+      "Like": 4
     },
     {
       "Title": "Muppets Most Wanted",
@@ -196,9 +158,7 @@
       "Budget": 51000000,
       "Box_office": 80400000,
       "Release_date": "2014-03-11",
-      "Directed_by": "James Bobin",
-      "Music_by": "Christophe Beck",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 3
     },
     {
       "Title": "National Treasure",
@@ -206,9 +166,7 @@
       "Budget": 100000000,
       "Box_office": 347500000,
       "Release_date": "2004-11-19",
-      "Directed_by": "Jon Turteltaub",
-      "Music_by": "Trevor Rabin",
-      "Distributed_by": "Buena Vista Pictures"
+      "Like": 2
     },
     {
       "Title": "Ratatouille",
@@ -216,9 +174,7 @@
       "Budget": 150000000,
       "Box_office": 623700000,
       "Release_date": "2007-06-22",
-      "Directed_by": "Brad Bird",
-      "Music_by": "Michael Giacchino",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 5
     },
     {
       "Title": "Robin Hood",
@@ -226,9 +182,7 @@
       "Budget": 5000000,
       "Box_office": 32000000,
       "Release_date": "1973-11-08",
-      "Directed_by": "Wolfgang Reitherman",
-      "Music_by": "George Bruns",
-      "Distributed_by": "Buena Vista Distribution"
+      "Like": 5
     },
     {
       "Title": "The Aristocats",
@@ -236,9 +190,7 @@
       "Budget": 4000000,
       "Box_office": 191000000,
       "Release_date": "1970-12-11",
-      "Directed_by": "Wolfgang Reitherman",
-      "Music_by": "George Bruns",
-      "Distributed_by": "Buena Vista Distribution"
+      "Like": 5
     },
     {
       "Title": "The Incredibles",
@@ -246,9 +198,7 @@
       "Budget": 92000000,
       "Box_office": 633000000,
       "Release_date": "2004-10-24",
-      "Directed_by": "Brad Bird",
-      "Music_by": "Michael Giacchino",
-      "Distributed_by": "Buena Vista Pictures Distribution"
+      "Like": 4
     },
     {
       "Title": "The Jungle Book",
@@ -256,9 +206,7 @@
       "Budget": 4000000,
       "Box_office": 378000000,
       "Release_date": "1967-10-18",
-      "Directed_by": "Wolfgang Reitherman",
-      "Music_by": "George Bruns",
-      "Distributed_by": "Buena Vista Distribution"
+      "Like": 4
     },
     {
       "Title": "The Love Bug",
@@ -266,9 +214,7 @@
       "Budget": 5000000,
       "Box_office": 51264000,
       "Release_date": "1968-12-24",
-      "Directed_by": "Robert Stevenson",
-      "Music_by": "George Bruns",
-      "Distributed_by": "Buena Vista Distribution"
+      "Like": 3
     },
     {
       "Title": "The Mighty Ducks",
@@ -276,9 +222,7 @@
       "Budget": 14000000,
       "Box_office": 50800000,
       "Release_date": "1992-10-02",
-      "Directed_by": "Stephen Herek",
-      "Music_by": "David Newman",
-      "Distributed_by": "Buena Vista Pictures"
+      "Like": 5
     },
     {
       "Title": "The Muppets",
@@ -286,9 +230,7 @@
       "Budget": 45000000,
       "Box_office": 165200000,
       "Release_date": "2011-11-04",
-      "Directed_by": "James Bobin",
-      "Music_by": "Christophe Beck",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 4
     },
     {
       "Title": "The Pacifier",
@@ -296,9 +238,7 @@
       "Budget": 56000000,
       "Box_office": 198600000,
       "Release_date": "2005-03-04",
-      "Directed_by": "Adam Shankman",
-      "Music_by": "John Debney",
-      "Distributed_by": "Buena Vista Pictures Distribution"
+      "Like": 2
     },
     {
       "Title": "The Princess Diaries",
@@ -306,9 +246,7 @@
       "Budget": 26000000,
       "Box_office": 165300000,
       "Release_date": "2001-07-29",
-      "Directed_by": "Garry Marshall",
-      "Music_by": "John Debney",
-      "Distributed_by": "Buena Vista Pictures"
+      "Like": 3
     },
     {
       "Title": "The Rocketeer",
@@ -316,9 +254,7 @@
       "Budget": 35000000,
       "Box_office": 46700000,
       "Release_date": "1991-06-21",
-      "Directed_by": "Joe Johnston",
-      "Music_by": "James Horner",
-      "Distributed_by": "Buena Vista Pictures Distribution"
+      "Like": 4
     },
     {
       "Title": "The Santa Clause 2",
@@ -326,9 +262,7 @@
       "Budget": 65000000,
       "Box_office": 172900000,
       "Release_date": "2002-11-01",
-      "Directed_by": "Michael Lembeck",
-      "Music_by": "George S. Clinton",
-      "Distributed_by": "Buena Vista Pictures Distribution"
+      "Like": 2
     },
     {
       "Title": "The Sorcerer's Apprentice",
@@ -336,9 +270,7 @@
       "Budget": 150000000,
       "Box_office": 215300000,
       "Release_date": "2010-07-08",
-      "Directed_by": "Jon Turteltaub",
-      "Music_by": "Trevor Rabin",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 5
     },
     {
       "Title": "Tomorrowland",
@@ -346,9 +278,7 @@
       "Budget": 180000000,
       "Box_office": 209000000,
       "Release_date": "2015-05-09",
-      "Directed_by": "Brad Bird",
-      "Music_by": "Michael Giacchino",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 1
     },
     {
       "Title": "Toy Story",
@@ -356,9 +286,7 @@
       "Budget": 30000000,
       "Box_office": 373000000,
       "Release_date": "1995-11-19",
-      "Directed_by": "John Lasseter",
-      "Music_by": "Randy Newman",
-      "Distributed_by": "Buena Vista Pictures Distribution"
+      "Like": 2
     },
     {
       "Title": "Toy Story 3",
@@ -366,9 +294,7 @@
       "Budget": 200000000,
       "Box_office": 1067000000,
       "Release_date": "2010-06-12",
-      "Directed_by": "Lee Unkrich",
-      "Music_by": "Randy Newman",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 3
     },
     {
       "Title": "Up",
@@ -376,9 +302,7 @@
       "Budget": 175000000,
       "Box_office": 735100000,
       "Release_date": "2009-05-29",
-      "Directed_by": "Pete Docter",
-      "Music_by": "Michael Giacchino",
-      "Distributed_by": "Walt Disney Studios Motion Pictures"
+      "Like": 2
     }
    ]
 }

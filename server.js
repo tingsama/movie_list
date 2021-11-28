@@ -11,14 +11,22 @@ let jdata = JSON.parse(fs.readFileSync('public/movie.json'));
 app.use(express.static("public"));
 app.use(express.json());
 
-// // define the first route
-// app.get("/hello", function (req, res) {
-//     res.send("<h1>Hello World!</h1>")
-// })
-
 app.get('/info', (req,res) => {
     res.json(jdata)
 });
+
+app.post("/add",(req, res) => {
+    console.log(">>post ...", req.body);
+    req_body = req.body;
+    addSomething(req_body.index, req_body.like) 
+    res.sendStatus(200)
+});
+
+const addSomething = (index, like) => {
+    changed_term = jdata.data[index];
+    changed_term.Like = like;
+	console.log(">>>add ...      ", changed_term)
+}
 
 // start the server listening for requests
 let listener = app.listen(process.env.PORT || 3000, 
